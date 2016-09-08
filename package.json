@@ -1,0 +1,30 @@
+{
+  "name": "envic",
+  "version": "1.0.0",
+  "description": "JSON, JSONIC or string environment variables",
+  "main": "index.js",
+  "scripts": {
+    "test": "TEST=$(NODE_ENV=test node test.js); if [ \"${TEST}\" != test ]; then echo Test_Failed; exit 1; fi"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://yieme@github.com/yieme/envic.git"
+  },
+  "keywords": [
+    "json",
+    "jsonic",
+    "env",
+    "environment",
+    "config"
+  ],
+  "author": "yieme",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/yieme/envic/issues"
+  },
+  "homepage": "https://github.com/yieme/envic#readme",
+  "dependencies": {
+    "jsonic": "^0.2.2",
+    "string": "^3.3.1"
+  }
+}
