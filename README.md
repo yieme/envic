@@ -2,17 +2,17 @@
 
 Humanized JSON, JSONIC or string environment variables.
 
-Get strings and expanded JSON and JSONIC variables into objects, for environment keys be the passed humanized key (ex: `Mongo URL`), [underscored](http://stringjs.com/#methods/underscore) key (ex: `MONGO_URL` or `mongo_url`), [camelized](http://stringjs.com/#methods/camelize) key (ex: `mongoUrl` or `MONGOURL`) or [slugified](http://stringjs.com/#methods/slugify) key (ex: `MONGO-URL` or `mongo-url`)
+Get strings and expanded JSON and JSONIC variables into objects, for environment keys for the passed key (ex humanized: `Mongo URL`).
 
 ## Detection order
 
-1) passed key
-2) uppercased underscored
-3) lowercased underscored
-4) camelized
-5) uppercase camelized
-6) uppercase slugified
-7) lowercase slugified
+- Passed key (ex: `Mongo URL`)
+- Uppercase [Underscored](http://stringjs.com/#methods/underscore) key (ex: `MONGO_URL`)
+- Lowercase [Underscored](http://stringjs.com/#methods/underscore) key (ex: `mongo_url`)
+- Uppercase [Camelized](http://stringjs.com/#methods/camelize) key (ex: `MONGOURL`)
+- [Camelized](http://stringjs.com/#methods/camelize) key (ex: `mongoUrl`)
+- Uppercase [Slugified](http://stringjs.com/#methods/slugify) key (ex: `MONGO-URL`)
+- Lowercase [Slugified](http://stringjs.com/#methods/slugify) key (ex: `mongo-url`)
 
 ## Install
 
