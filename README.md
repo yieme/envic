@@ -10,7 +10,7 @@ Get strings and expanded JSON and JSONIC variables into objects, for environment
 - Uppercase [Underscored](http://stringjs.com/#methods/underscore) key (ex: `MONGO_URL`)
 - Lowercase [Underscored](http://stringjs.com/#methods/underscore) key (ex: `mongo_url`)
 - Uppercase [Camelized](http://stringjs.com/#methods/camelize) key (ex: `MONGOURL`)
-- [Camelized](http://stringjs.com/#methods/camelize) key (ex: `mongoUrl`)
+- [Camelized](http://stringjs.com/#methods/camelize) key (ex: `MongoUrl`)
 - Uppercase [Slugified](http://stringjs.com/#methods/slugify) key (ex: `MONGO-URL`)
 - Lowercase [Slugified](http://stringjs.com/#methods/slugify) key (ex: `mongo-url`)
 
@@ -53,19 +53,21 @@ try {
   mailgunConfig = defaultConfig
 }
 
-// use:
+// use: with default
 var mailgunConfig = envic('MailGun', {apiKey: 'key-DEFAULT_KEY', domain: 'example.mailgun.com'})
 ```
 ### JSONIC environment variables
 
 [JSONIC](https://github.com/rjrodger/jsonic) is simplifed JSON
 
-Ex: env variable MAILGUN = `apiKey:key-DEFAULT_KEY, domain:myproject.mailgun.com`
+Example:
 
+```sh
+`MAILGUN = 'apiKey:key-DEFAULT_KEY, domain:myproject.mailgun.com' node example.js`
+```
 
 ```js
-// use:
-var mailgunConfig = envic('MailGun', {apiKey: 'key-DEFAULT_KEY', domain: 'example.mailgun.com'})
+var mailgunConfig = envic('Mail Gun')
 ```
 
 ## License

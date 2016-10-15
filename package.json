@@ -1,10 +1,13 @@
 {
   "name": "envic",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "JSON, JSONIC or string environment variables",
   "main": "index.js",
   "scripts": {
-    "test": "TEST=$(NODE_ENV=test node test.js); if [ \"${TEST}\" != test ]; then echo Test_Failed; exit 1; fi"
+    "test1": "FOOBAR='ok:here' node test.js",
+    "test2": "FOO_BAR='ok:here' node test.js",
+    "test3": "FooBar='ok:here' node test.js",
+    "test": "npm run test1 && npm run test2 && npm run test3"
   },
   "repository": {
     "type": "git",

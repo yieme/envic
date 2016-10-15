@@ -32,20 +32,18 @@
         };
       };
     };
-    if (result === undefined) {
-      if (typeof result == 'string') {
-        var obj;
+    if (typeof result == 'string') {
+      var obj;
+      try {
+        var obj = jsonic(result)
+        result = obj;
+      } catch(e) {
         try {
-          var obj = JSONIC(result)
+          var obj = JSON.parse(result)
           result = obj;
-        } catch(e) {
-          try {
-            var obj = JSON.parse(result)
-            result = obj;
-          } catch(e) {}
-        }
+        } catch(e) {}
       }
-    };
+    }
     return (result === undefined) ? defaultValue : result;
   }
 
