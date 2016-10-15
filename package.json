@@ -1,6 +1,6 @@
 {
   "name": "envic",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "JSON, JSONIC or string environment variables",
   "main": "index.js",
   "scripts": {
