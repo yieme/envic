@@ -1,6 +1,6 @@
 {
   "name": "envic",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "JSON, JSONIC or string environment variables",
   "main": "index.js",
   "scripts": {
@@ -27,7 +27,7 @@
   },
   "homepage": "https://github.com/yieme/envic#readme",
   "dependencies": {
-    "jsonic": "^0.2.2",
-    "string": "^3.3.1"
+    "jsonic": "^0.3.0",
+    "string": "^3.3.3"
   }
 }
